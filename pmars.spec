@@ -64,7 +64,7 @@ pmars z reprezentacj± na curses.
 # X11 version
 %{__make} CC=%{__cc} \
 	CFLAGS="%{rpmcflags} -DEXT94 -DXWINGRAPHX" \
-	LIB="%{rpmldflags} -L%{_prefix}/X11R6/lib -lX11" \
+	LIB="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib} -lX11" \
 	MAINFILE="xpmars"
 %{__make} clean
 
