@@ -3,13 +3,14 @@ Summary:	Portable corewar system with ICWS'94 extensions
 Summary(pl):	Przeno¶ny system Wojen Rdzeniowych z rozszerzeniami ICWS'94
 Name:		pmars
 Version:	0.8.6
-Release:	2
+Release:	3
 License:	Freeware
 Group:		Applications/Games
 Source0:	http://www.koth.org/%{name}/%{name}-%{_fver}_tar.gz
 Source1:	corewars.tar.gz
 BuildRequires:	XFree86-devel
 BuildRequires:	ncurses-devel
+BuildRequires:	vim-static
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_xbindir	/usr/X11R6/bin
