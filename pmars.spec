@@ -4,7 +4,7 @@ Summary(pl):	Przeno¶ny system Wojen Rdzeniowych z rozszerzeniami ICWS'94
 Name:		pmars
 Version:	0.8.6
 Release:	2
-License:	freeware
+License:	Freeware
 Group:		Applications/Games
 Source0:	http://www.koth.org/%{name}/%{name}-%{_fver}_tar.gz
 Source1:	corewars.tar.gz
