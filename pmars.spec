@@ -13,8 +13,6 @@ BuildRequires:	ncurses-devel
 BuildRequires:	vim-static
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_xbindir	/usr/X11R6/bin
-
 %description
 Core War is a game in which two or more virus-like programs fight
 against each other in a simulated memory space or core. Core War
@@ -84,10 +82,9 @@ pmars z reprezentacj± na curses.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_xbindir},%{_mandir}/man6}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man6}
 
-install {,c}pmars	$RPM_BUILD_ROOT%{_bindir}
-install xpmars		$RPM_BUILD_ROOT%{_xbindir}
+install {,c,x}pmars	$RPM_BUILD_ROOT%{_bindir}
 install pmars.6		$RPM_BUILD_ROOT%{_mandir}/man6
 
 mkdir examples
@@ -106,7 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files x11
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_xbindir}/xpmars
+%attr(755,root,root) %{_bindir}/xpmars
 
 %files curses
 %defattr(644,root,root,755)
