@@ -6,20 +6,6 @@ Version:	0.8.6
 Release:	2
 License:	freeware
 Group:		Applications/Games
-Group(cs):	Aplikace/Hry
-Group(da):	Programmer/Spil
-Group(de):	Applikationen/Spiele
-Group(es):	Aplicaciones/Juegos
-Group(fr):	Applications/Jeux
-Group(is):	Forrit/Leikir
-Group(it):	Applicazioni/Giochi
-Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•≤°º•‡
-Group(no):	Applikasjoner/Spill
-Group(pl):	Aplikacje/Gry
-Group(pt):	AplicaÁıes/Jogos
-Group(ru):	“…Ãœ÷≈Œ…—/È«“Ÿ
-Group(sl):	Programi/Igre
-Group(sv):	Till‰mpningar/Spel
 Source0:	http://www.koth.org/%{name}/%{name}-%{_fver}_tar.gz
 Source1:	corewars.tar.gz
 BuildRequires:	XFree86-devel
@@ -52,20 +38,6 @@ ftp://rtfm.mit.edu/pub/usenet/games/corewar-faq
 Summary:	pmars with X11 graphics
 Summary(pl):	pmars z reprezentacj± na X11
 Group:		X11/Applications/Games
-Group(cs):	X11/Aplikace/Hry
-Group(da):	X11/Programmer/Spil
-Group(de):	X11/Applikationen/Spiele
-Group(es):	X11/Aplicaciones/Juegos
-Group(fr):	X11/Applications/Jeux
-Group(is):	X11/Forrit/Leikir
-Group(it):	X11/Applicazioni/Giochi
-Group(ja):	X11/•¢•◊•Í•±°º•∑•Á•Û/•≤°º•‡
-Group(no):	X11/Applikasjoner/Spill
-Group(pl):	X11/Aplikacje/Gry
-Group(pt):	X11/AplicaÁıes/Jogos
-Group(ru):	X11/“…Ãœ÷≈Œ…—/È«“Ÿ
-Group(sl):	X11/Programi/Igre
-Group(sv):	X11/Till‰mpningar/Spel
 
 %description x11
 pmars with X11 graphics.
@@ -77,20 +49,6 @@ pmars z reprezentacj± na X11.
 Summary:	pmars with curses graphics
 Summary(pl):	pmars z reprezentacj± na curses
 Group:		Applications/Games
-Group(cs):	Aplikace/Hry
-Group(da):	Programmer/Spil
-Group(de):	Applikationen/Spiele
-Group(es):	Aplicaciones/Juegos
-Group(fr):	Applications/Jeux
-Group(is):	Forrit/Leikir
-Group(it):	Applicazioni/Giochi
-Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•≤°º•‡
-Group(no):	Applikasjoner/Spill
-Group(pl):	Aplikacje/Gry
-Group(pt):	AplicaÁıes/Jogos
-Group(ru):	“…Ãœ÷≈Œ…—/È«“Ÿ
-Group(sl):	Programi/Igre
-Group(sv):	Till‰mpningar/Spel
 
 %description curses
 pmars with curses graphics.
