@@ -31,7 +31,7 @@ wirusów walczy ze sob± w symulowanej przestrzeni adresowej (rdzeniu.)
 Programy te pisane s± w assemblerze nazwanym Redcode, który jest
 interpretowany przez symulator Wojen Rdzeniowych, MARS (Memory Array
 Redcode Simulator.) Celem gry jest zapobie¿enie wykonywaniu
-pozosta³ych programów. Aby dowiedzeæ siê wiêcej o Wojnach Rdzeniowych
+pozosta³ych programów. Aby dowiedzieæ siê wiêcej o Wojnach Rdzeniowych
 sprawd¼ grupê dyskusyjn± rec.games.corewar i jej FAQ
 ftp://rtfm.mit.edu/pub/usenet/games/corewar-faq
 
