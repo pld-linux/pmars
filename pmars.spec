@@ -7,7 +7,9 @@ Release:	3
 License:	Freeware
 Group:		Applications/Games
 Source0:	http://www.koth.org/%{name}/%{name}-%{_fver}_tar.gz
+# Source0-md5:	eaea26fc7df36a6e6e851767e5ae4c25
 Source1:	corewars.tar.gz
+# Source1-md5:	4df24a0f88d0dc4f66f67a4e4fa596cc
 BuildRequires:	XFree86-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	vim-static
