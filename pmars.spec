@@ -93,14 +93,12 @@ install pmars.6		$RPM_BUILD_ROOT%{_mandir}/man6
 mkdir examples
 for i in *.red ; do mv -f $i examples ; done
 
-gzip -9nf README CONTRIB primer.94 primer.cdb redcode.ref whatsnew.080
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz *.opt *.mac
+%doc README CONTRIB primer.94 primer.cdb redcode.ref whatsnew.080 *.opt *.mac
 %doc examples
 %lang(pl) %doc corewars-pl/*
 %attr(755,root,root) %{_bindir}/pmars
