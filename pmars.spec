@@ -5,16 +5,27 @@ Name:		pmars
 Version:	0.8.6
 Release:	1
 License:	freeware
-Group:		X11/Applications/Games
-Group(de):	X11/Applikationen/Spiele
-Group(pl):	X11/Aplikacje/Gry
+Group:		Applications/Games
+Group(cs):	Aplikace/Hry
+Group(da):	Programmer/Spil
+Group(de):	Applikationen/Spiele
+Group(es):	Aplicaciones/Juegos
+Group(fr):	Applications/Jeux
+Group(is):	Forrit/Leikir
+Group(it):	Applicazioni/Giochi
+Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•≤°º•‡
+Group(no):	Applikasjoner/Spill
+Group(pl):	Aplikacje/Gry
+Group(pt):	AplicaÁıes/Jogos
+Group(ru):	“…Ãœ÷≈Œ…—/È«“Ÿ
+Group(sl):	Programi/Igre
+Group(sv):	Till‰mpningar/Spel
 Source0:	http://www.koth.org/%{name}/%{name}-%{_fver}_tar.gz
 BuildRequires:	XFree86-devel
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_xbindir	/usr/X11R6/bin
-%define 	_prefix		/usr
 
 %description
 Core War is a game in which two or more virus-like programs fight
@@ -40,19 +51,51 @@ ftp://rtfm.mit.edu/pub/usenet/games/corewar-faq
 Summary:	pmars with X11 graphics
 Summary(pl):	pmars z reprezentacj± na X11
 Group:		X11/Applications/Games
+Group(cs):	X11/Aplikace/Hry
+Group(da):	X11/Programmer/Spil
 Group(de):	X11/Applikationen/Spiele
+Group(es):	X11/Aplicaciones/Juegos
+Group(fr):	X11/Applications/Jeux
+Group(is):	X11/Forrit/Leikir
+Group(it):	X11/Applicazioni/Giochi
+Group(ja):	X11/•¢•◊•Í•±°º•∑•Á•Û/•≤°º•‡
+Group(no):	X11/Applikasjoner/Spill
 Group(pl):	X11/Aplikacje/Gry
+Group(pt):	X11/AplicaÁıes/Jogos
+Group(ru):	X11/“…Ãœ÷≈Œ…—/È«“Ÿ
+Group(sl):	X11/Programi/Igre
+Group(sv):	X11/Till‰mpningar/Spel
 
 %description x11
+pmars with X11 graphics.
+
+%description x11 -l pl
+pmars z reprezentacj± na X11.
 
 %package curses
 Summary:	pmars with curses graphics
 Summary(pl):	pmars z reprezentacj± na curses
-Group:		X11/Applications/Games
-Group(de):	X11/Applikationen/Spiele
-Group(pl):	X11/Aplikacje/Gry
+Group:		Applications/Games
+Group(cs):	Aplikace/Hry
+Group(da):	Programmer/Spil
+Group(de):	Applikationen/Spiele
+Group(es):	Aplicaciones/Juegos
+Group(fr):	Applications/Jeux
+Group(is):	Forrit/Leikir
+Group(it):	Applicazioni/Giochi
+Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•≤°º•‡
+Group(no):	Applikasjoner/Spill
+Group(pl):	Aplikacje/Gry
+Group(pt):	AplicaÁıes/Jogos
+Group(ru):	“…Ãœ÷≈Œ…—/È«“Ÿ
+Group(sl):	Programi/Igre
+Group(sv):	Till‰mpningar/Spel
 
 %description curses
+pmars with curses graphics.
+
+%description curses -l pl
+pmars z reprezentacj± na curses.
 
 %prep
 %setup -q
@@ -88,7 +131,7 @@ install xpmars		$RPM_BUILD_ROOT%{_xbindir}
 install pmars.6		$RPM_BUILD_ROOT%{_mandir}/man6
 
 mkdir examples
-for i in *.red ; do mv $i examples ; done
+for i in *.red ; do mv -f $i examples ; done
 
 gzip -9nf README CONTRIB primer.94 primer.cdb redcode.ref whatsnew.080
 
