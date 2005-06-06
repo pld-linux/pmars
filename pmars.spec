@@ -11,6 +11,7 @@ Source0:	http://www.koth.org/%{name}/%{name}-%{_fver}_tar.gz
 Source1:	corewars.tar.gz
 # Source1-md5:	4df24a0f88d0dc4f66f67a4e4fa596cc
 BuildRequires:	XFree86-devel
+BuildRequires:	groff
 BuildRequires:	ncurses-devel
 BuildRequires:	vim-static
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
