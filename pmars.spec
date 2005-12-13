@@ -6,7 +6,7 @@ Version:	0.8.6
 Release:	4
 License:	Freeware
 Group:		Applications/Games
-Source0:	http://www.koth.org/%{name}/%{name}-%{_fver}_tar.gz
+Source0:	http://www.koth.org/pmars/%{name}-%{_fver}_tar.gz
 # Source0-md5:	eaea26fc7df36a6e6e851767e5ae4c25
 Source1:	corewars.tar.gz
 # Source1-md5:	4df24a0f88d0dc4f66f67a4e4fa596cc
@@ -63,21 +63,21 @@ pmars z reprezentacj± na curses.
 
 %build
 # X11 version
-%{__make} CC=%{__cc} \
+%{__make} CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -DEXT94 -DXWINGRAPHX" \
 	LIB="%{rpmldflags} -L%{_prefix}/X11R6/%{_lib} -lX11" \
 	MAINFILE="xpmars"
 %{__make} clean
 
 # curses version
-%{__make} CC=%{__cc} \
-	CFLAGS="%{rpmcflags} -DEXT94 -DCURSESGRAPHX -I%{_includedir}/ncurses" \
+%{__make} CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -DEXT94 -DCURSESGRAPHX -I/usr/include/ncurses" \
 	LIB="%{rpmldflags} -lncurses" \
 	MAINFILE="cpmars"
 %{__make} clean
 
 # batch version
-%{__make} CC=%{__cc} \
+%{__make} CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -DEXT94" \
 	LIB="%{rpmldflags}"
 
