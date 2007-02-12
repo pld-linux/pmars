@@ -1,6 +1,6 @@
 %define		_fver	%(echo %{version} | tr . _)
 Summary:	Portable corewar system with ICWS'94 extensions
-Summary(pl):	Przeno¶ny system Wojen Rdzeniowych z rozszerzeniami ICWS'94
+Summary(pl.UTF-8):   PrzenoÅ›ny system Wojen Rdzeniowych z rozszerzeniami ICWS'94
 Name:		pmars
 Version:	0.8.6
 Release:	4
@@ -26,37 +26,37 @@ from executing. For more information about Core War check out the
 usenet newsgroup rec.games.corewar and its FAQ list
 ftp://rtfm.mit.edu/pub/usenet/games/corewar-faq
 
-%description -l pl
-Wojny Rdzeniowe s± gr± w której dwa lub wiêcej programów podobnych do
-wirusów walczy ze sob± w symulowanej przestrzeni adresowej (rdzeniu.)
-Programy te pisane s± w assemblerze nazwanym Redcode, który jest
+%description -l pl.UTF-8
+Wojny Rdzeniowe sÄ… grÄ… w ktÃ³rej dwa lub wiÄ™cej programÃ³w podobnych do
+wirusÃ³w walczy ze sobÄ… w symulowanej przestrzeni adresowej (rdzeniu.)
+Programy te pisane sÄ… w assemblerze nazwanym Redcode, ktÃ³ry jest
 interpretowany przez symulator Wojen Rdzeniowych, MARS (Memory Array
-Redcode Simulator.) Celem gry jest zapobie¿enie wykonywaniu
-pozosta³ych programów. Aby dowiedzieæ siê wiêcej o Wojnach Rdzeniowych
-sprawd¼ grupê dyskusyjn± rec.games.corewar i jej FAQ
+Redcode Simulator.) Celem gry jest zapobieÅ¼enie wykonywaniu
+pozostaÅ‚ych programÃ³w. Aby dowiedzieÄ‡ siÄ™ wiÄ™cej o Wojnach Rdzeniowych
+sprawdÅº grupÄ™ dyskusyjnÄ… rec.games.corewar i jej FAQ
 ftp://rtfm.mit.edu/pub/usenet/games/corewar-faq
 
 %package x11
 Summary:	pmars with X11 graphics
-Summary(pl):	pmars z reprezentacj± na X11
+Summary(pl.UTF-8):   pmars z reprezentacjÄ… na X11
 Group:		X11/Applications/Games
 
 %description x11
 pmars with X11 graphics.
 
-%description x11 -l pl
-pmars z reprezentacj± na X11.
+%description x11 -l pl.UTF-8
+pmars z reprezentacjÄ… na X11.
 
 %package curses
 Summary:	pmars with curses graphics
-Summary(pl):	pmars z reprezentacj± na curses
+Summary(pl.UTF-8):   pmars z reprezentacjÄ… na curses
 Group:		Applications/Games
 
 %description curses
 pmars with curses graphics.
 
-%description curses -l pl
-pmars z reprezentacj± na curses.
+%description curses -l pl.UTF-8
+pmars z reprezentacjÄ… na curses.
 
 %prep
 %setup -q -a 1
