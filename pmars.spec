@@ -1,6 +1,6 @@
 %define		_fver	%(echo %{version} | tr . _)
 Summary:	Portable corewar system with ICWS'94 extensions
-Summary(pl.UTF-8):   Przenośny system Wojen Rdzeniowych z rozszerzeniami ICWS'94
+Summary(pl.UTF-8):	Przenośny system Wojen Rdzeniowych z rozszerzeniami ICWS'94
 Name:		pmars
 Version:	0.8.6
 Release:	4
@@ -38,7 +38,7 @@ ftp://rtfm.mit.edu/pub/usenet/games/corewar-faq
 
 %package x11
 Summary:	pmars with X11 graphics
-Summary(pl.UTF-8):   pmars z reprezentacją na X11
+Summary(pl.UTF-8):	pmars z reprezentacją na X11
 Group:		X11/Applications/Games
 
 %description x11
@@ -49,7 +49,7 @@ pmars z reprezentacją na X11.
 
 %package curses
 Summary:	pmars with curses graphics
-Summary(pl.UTF-8):   pmars z reprezentacją na curses
+Summary(pl.UTF-8):	pmars z reprezentacją na curses
 Group:		Applications/Games
 
 %description curses
