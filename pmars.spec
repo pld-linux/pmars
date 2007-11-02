@@ -1,19 +1,17 @@
-%define		_fver	%(echo %{version} | tr . _)
 Summary:	Portable corewar system with ICWS'94 extensions
 Summary(pl.UTF-8):	Przenośny system Wojen Rdzeniowych z rozszerzeniami ICWS'94
 Name:		pmars
-Version:	0.8.6
-Release:	4
-License:	Freeware
+Version:	0.9.2
+Release:	1
+License:	GPL
 Group:		Applications/Games
-Source0:	http://www.koth.org/pmars/%{name}-%{_fver}_tar.gz
-# Source0-md5:	eaea26fc7df36a6e6e851767e5ae4c25
+Source0:	http://dl.sourceforge.net/corewar/%{name}-%{version}.tar.gz
+# Source0-md5:	a73943a34e9de8f0d3028fc4566cd558
 Source1:	corewars.tar.gz
 # Source1-md5:	4df24a0f88d0dc4f66f67a4e4fa596cc
-BuildRequires:	XFree86-devel
 BuildRequires:	groff
 BuildRequires:	ncurses-devel
-BuildRequires:	vim-static
+BuildRequires:	xorg-lib-libX11-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -62,6 +60,7 @@ pmars z reprezentacją na curses.
 %setup -q -a 1
 
 %build
+cd src
 # X11 version
 %{__make} CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -DEXT94 -DXWINGRAPHX" \
@@ -81,25 +80,22 @@ pmars z reprezentacją na curses.
 	CFLAGS="%{rpmcflags} -DEXT94" \
 	LIB="%{rpmldflags}"
 
-# TODO: svgalib version
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man6}
 
-install {,c,x}pmars	$RPM_BUILD_ROOT%{_bindir}
-install pmars.6		$RPM_BUILD_ROOT%{_mandir}/man6
-
-mkdir examples
-for i in *.red ; do mv -f $i examples ; done
+install src/{,c,x}pmars	$RPM_BUILD_ROOT%{_bindir}
+install doc/pmars.6	$RPM_BUILD_ROOT%{_mandir}/man6
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README CONTRIB primer.94 primer.cdb redcode.ref whatsnew.080 *.opt *.mac
-%doc examples
+%doc AUTHORS CONTRIB ChangeLog README
+%doc doc/primer* doc/redcode.ref doc/whatsnew.080 doc/corewar-faq.html
+%doc config
+%doc warriors
 %lang(pl) %doc corewars-pl/*
 %attr(755,root,root) %{_bindir}/pmars
 %{_mandir}/man6/*
